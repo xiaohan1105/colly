@@ -23,5 +23,5 @@ func main() {
 	})
 
 	// start scraping
-	c.Visit("https://www.baidu.com/")
+	c.Visit("https://www.baidu.com/index.html")
 }
