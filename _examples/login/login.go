@@ -11,7 +11,8 @@ func main() {
 	c := colly.NewCollector()
 
 	// authenticate
-	err := c.Post("http://example.com/login", map[string]string{"username": "admin", "password": "admin"})
+	err := c.Post("http://www.baidu.com/login",
+		map[string]string{"username": "admin", "password": "admin"})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -22,5 +23,5 @@ func main() {
 	})
 
 	// start scraping
-	c.Visit("https://example.com/")
+	c.Visit("http://www.baidu.com/")
 }
